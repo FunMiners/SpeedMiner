@@ -101,9 +101,6 @@
     <ClCompile Include="StateMachine.cpp">
       <Filter>Source Files\Logic</Filter>
     </ClCompile>
-    <ClCompile Include="AState.cpp">
-      <Filter>Source Files\Logic</Filter>
-    </ClCompile>
     <ClCompile Include="Forward.cpp">
       <Filter>Source Files\Logic</Filter>
     </ClCompile>
@@ -136,6 +133,9 @@
     </ClCompile>
     <ClCompile Include="WallPresence.cpp">
       <Filter>Source Files\Simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="aState.cpp">
+      <Filter>Source Files\Logic</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

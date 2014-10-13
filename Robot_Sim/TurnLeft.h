@@ -1,4 +1,5 @@
 #pragma once
+#include "aState.h"
 class TurnLeft :
 	public aState
 {

@@ -1,7 +1,7 @@
 #pragma once
-#include "AState.h"
+#include "aState.h"
 class TurnRight :
-	public AState
+	public aState
 {
 public:
 	TurnRight();

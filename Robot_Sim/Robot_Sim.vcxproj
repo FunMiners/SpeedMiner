@@ -96,7 +96,7 @@
     <ClInclude Include="WallSensor.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="AState.cpp" />
+    <ClCompile Include="aState.cpp" />
     <ClCompile Include="Forward.cpp" />
     <ClCompile Include="Integrator.cpp" />
     <ClCompile Include="IOObj.cpp" />
