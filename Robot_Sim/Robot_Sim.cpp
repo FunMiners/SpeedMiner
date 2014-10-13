@@ -2,10 +2,17 @@
 //
 
 #include "stdafx.h"
+#include "StateMachine.h"
+#include <iostream>
+using namespace std;
 
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	return 0;
+	char wait;
+	StateMachine machine;
+	machine.Start();
+	std::cin >> wait;
+	return 0;	
 }
 
