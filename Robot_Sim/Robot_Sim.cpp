@@ -2,10 +2,13 @@
 //
 
 #include "stdafx.h"
+#include "MazeSim.h"
 
 
-int _tmain(int argc, _TCHAR* argv[])
+int main()
 {
+	MazeSim mazesim;
+	std::cin.get();
 	return 0;
 }
 
