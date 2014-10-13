@@ -1,12 +1,12 @@
 #include "stdafx.h"
-#include "AState.h"
+#include "aState.h"
 
 
-AState::AState()
+aState::aState()
 {
 }
 
 
-AState::~AState()
+aState::~aState()
 {
 }
