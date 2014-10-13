@@ -83,6 +83,7 @@
     <ClInclude Include="Forward.h" />
     <ClInclude Include="Integrator.h" />
     <ClInclude Include="IOObj.h" />
+    <ClInclude Include="MazeSim.h" />
     <ClInclude Include="Motor.h" />
     <ClInclude Include="Parked.h" />
     <ClInclude Include="PosSensor.h" />
@@ -100,6 +101,7 @@
     <ClCompile Include="Forward.cpp" />
     <ClCompile Include="Integrator.cpp" />
     <ClCompile Include="IOObj.cpp" />
+    <ClCompile Include="MazeSim.cpp" />
     <ClCompile Include="Motor.cpp" />
     <ClCompile Include="Parked.cpp" />
     <ClCompile Include="PosSensor.cpp" />

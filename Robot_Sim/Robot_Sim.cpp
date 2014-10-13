@@ -3,16 +3,17 @@
 
 #include "stdafx.h"
 #include "StateMachine.h"
-#include <iostream>
-using namespace std;
+#include "MazeSim.h"
 
 
-int _tmain(int argc, _TCHAR* argv[])
+int main()
 {
 	char wait;
 	StateMachine machine;
 	machine.Start();
+	MazeSim mazesim;
 	std::cin >> wait;
-	return 0;	
+	std::cin.get();
+	return 0;
 }
 
