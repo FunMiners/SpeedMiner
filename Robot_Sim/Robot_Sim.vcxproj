@@ -83,6 +83,7 @@
     <ClInclude Include="Forward.h" />
     <ClInclude Include="Integrator.h" />
     <ClInclude Include="IOObj.h" />
+    <ClInclude Include="CallException.h" />
     <ClInclude Include="MazeSim.h" />
     <ClInclude Include="Motor.h" />
     <ClInclude Include="Parked.h" />

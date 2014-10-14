@@ -4,6 +4,7 @@
 #include "stdafx.h"
 #include "StateMachine.h"
 #include "MazeSim.h"
+#include "WallPresence.h"
 
 
 int main()
@@ -11,7 +12,8 @@ int main()
 	char wait;
 	StateMachine machine;
 	machine.Start();
-	MazeSim mazesim;
+	//MazeSim mazesim;
+	WallPresence wallpr;
 	std::cin >> wait;
 	std::cin.get();
 	return 0;
