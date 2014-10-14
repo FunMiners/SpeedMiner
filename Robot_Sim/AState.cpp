@@ -10,10 +10,8 @@ aState::aState()
 aState::~aState()
 {
 }
-void aState::Handle_State(bool isOpen, bool isBlocked){
 
-}
 
-void aState::Set_Next_State(aState& state){
-
+void aState::Handle_Motor(const Motor& rightMotor, const Motor& leftMotor){
+	
 }

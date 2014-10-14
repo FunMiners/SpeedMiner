@@ -4,7 +4,6 @@
 
 Forward::Forward()
 {
-	std::cout << "Forward constructor called" << endl;
 }
 
 
@@ -12,8 +11,8 @@ Forward::~Forward()
 {
 }
 
-void Forward::Handle_State(bool isOpen, bool isBlocked){
-}
-
-void Forward::Set_Next_State(aState& state){
+void Forward::Handle_Motor(const Motor& rightMotor, const Motor& leftMotorr){
+	std::cout << "Going forward" << endl;
+	//leftMotor.drive(1);
+	//rightMotor.drive(1);
 }
