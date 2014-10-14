@@ -12,8 +12,8 @@ private:
 	bool rightIsOpen;
 	bool roadIsBlocked;
 	bool leftIsOpen;
-	Motor rightMotor;
-	Motor leftMotor;
+	Motor *rightMotor;
+	Motor *leftMotor;
 public:
 	StateMachine();	
 	~StateMachine();

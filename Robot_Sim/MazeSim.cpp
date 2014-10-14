@@ -8,13 +8,10 @@ MazeSim::MazeSim(istream& mazeFile)
 {
 	data = readFile(mazeFile);
 }
-
-
 MazeSim::~MazeSim()
 {
 }
-
-void MazeSim::printfunction(mazeType& printData){
+void MazeSim::printfunction(mazeType& printData){ 
 	for (auto &yValues : printData){
 		for (auto &xValues : yValues){
 			cout << xValues << ", ";
@@ -24,7 +21,6 @@ void MazeSim::printfunction(mazeType& printData){
 }
 mazeType MazeSim::readFile(istream& mazeFile){
 		
-	
 	string completeText;
 	mazeType tempData;
 

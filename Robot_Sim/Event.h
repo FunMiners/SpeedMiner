@@ -1,10 +1,10 @@
-#ifndef EVENT_H
-#define EVENT_H
-
 #pragma once
 
 #include <list>
 #include "Listener.h"
+
+#ifndef EVENT_H
+#define EVENT_H
 
 //!	Abstract Event class
 /*!
@@ -12,8 +12,16 @@
 	Intentionally called Event to avoid any confusion because of the name, just like with
 	the Listener class.
 */
+class Listener;
 class Event
 {
+private:
+	//! List of Listeners
+	/*!
+	List of instances of Listeners to notify when the Event gets updated. Using std::list
+	from STL.
+	*/
+	std::list<Listener*> _listeners;
 public:
 	//! Event Constructor
 	/*!
@@ -33,7 +41,7 @@ public:
 		\param _listener an instance of Listener
 		\sa Listener::Listener()
 	*/
-	void attach(Listener* _listener)
+	void attach(Listener *_listener)
 	{
 		_listeners.push_back(_listener);
 	}
@@ -57,18 +65,13 @@ public:
 		e.q. this, as an argument. Might not be the best method, but we'll see if it works for us.
 	*/
 	void notify(){
-		for (auto it = _listeners.begin(); it != _listeners.end(); ++it)
+		
+		std::list<Listener*>::iterator it;
+		for (it = _listeners.begin(); it != _listeners.end(); ++it)
 		{
 			(*it)->update(this);
 		}
 	}
-private:
-	//! List of Listeners
-	/*!
-		List of instances of Listeners to notify when the Event gets updated. Using std::list
-		from STL.
-	*/
-	std::list<Listener*> _listeners;
 };
 
 #endif

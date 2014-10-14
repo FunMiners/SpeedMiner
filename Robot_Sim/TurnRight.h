@@ -10,6 +10,6 @@ public:
 	TurnRight();
 	~TurnRight();
 
-	void Handle_Motor(const Motor& rightMotor, const Motor& leftMotor);
+	void Handle_Motor(Motor* rightMotor, Motor* leftMotor);
 };
 
