@@ -1,10 +1,11 @@
 #include "stdafx.h"
 #include "WallPresence.h"
+#include <iostream>
 
 
-WallPresence::WallPresence()
+WallPresence::WallPresence() : maze(std::ifstream("MazeFile.txt"))
 {
-	maze = MazeSim();
+	//checkWall(2, 14);//starting point of maze is 2,14
 }
 
 
@@ -12,7 +13,7 @@ WallPresence::~WallPresence()
 {
 }
 bool WallPresence::checkWall(const int x, const int y){
-	if (maze.getMaze().at(x).at(y) == 0)
+	if (maze.getMaze().at(y).at(x) == 0)
 		return true;	
 	else
 		return false;
