@@ -11,8 +11,7 @@ int main()
 	char wait;
 	StateMachine machine;
 	machine.Start();
-	MazeSim mazesim;
-	std::cin >> wait;
+
 	std::cin.get();
 	return 0;
 }

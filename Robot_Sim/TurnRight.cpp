@@ -4,7 +4,7 @@
 
 TurnRight::TurnRight()
 {
-	std::cout << "Tright const called" << endl;
+	std::cout << "Turn right constructor called" << endl;
 }
 
 
