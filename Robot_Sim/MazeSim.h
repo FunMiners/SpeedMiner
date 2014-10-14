@@ -5,7 +5,9 @@
 #include <string>
 #include <vector>
 #include <string>
-//This class will simulate a maze
+#include "CallException.h"
+
+//This class will simulate a maze or read a maze from a text file
 class MazeSim
 {
 private:
@@ -14,6 +16,7 @@ public:
 	MazeSim();
 	~MazeSim();
 	std::vector<std::vector<int> > readFile();
-	/*void printf(std::vector<std::vector<int> > printData);*/
+	std::vector<std::vector<int> > getMaze();
+	/*void printfunction(const std::vector<std::vector<int> > printData);*/
 };
 
