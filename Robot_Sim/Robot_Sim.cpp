@@ -11,6 +11,7 @@ int main()
 {
 	char wait;
 	StateMachine machine;
+	machine.Set_Next_State();
 	//MazeSim mazesim;
 	WallPresence wallpr;
 	std::cin >> wait;
