@@ -11,7 +11,6 @@ int main()
 {
 	char wait;
 	StateMachine machine;
-	machine.Start();
 	//MazeSim mazesim;
 	WallPresence wallpr;
 	std::cin >> wait;
