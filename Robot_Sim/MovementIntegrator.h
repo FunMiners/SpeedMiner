@@ -1,6 +1,8 @@
 #pragma once
 
+#include <tuple>
 #include "Event.h"
+#include "Motor.h"
 
 #ifndef ORIENTATION_ENUM
 #define ORIENTATION_ENUM
@@ -11,8 +13,13 @@
 	places outside the class but inside it's own #ifndef defintion so it isn't defined twice (if defined)
 	elsewhere like in the position sensor.
 */
-enum Orientation{ North, East, South, West };
+enum Orientation{ North = 0, East, South, West };
 
+#endif
+
+#ifndef POSITION_TYPEDEF
+#define POSITION_TYPEDEF
+typedef std::tuple < int, int > Position;
 #endif
 
 #ifndef MOVEMENTINTEGRATOR_H
@@ -24,7 +31,7 @@ enum Orientation{ North, East, South, West };
 	robot throughout the maze. It "listens" to events fired by the motors (Left / Right) 
 	and updates the position and direction accordingly.
 */
-class MovementIntegrator : public Listener
+class MovementIntegrator : public Listener, public Event
 {
 private:
 	//! Current orienatation of the Robot
@@ -66,6 +73,18 @@ public:
 
 	//! Update the current variables with the given event
 	void update(Event* _event);
+
+	//! Update the direction of the robot based on movement
+	void updateDirection(int _leftMovement, int _rightMovement);
+	
+	//! Update the coördinates of the robot based on movement
+	void updatePosition(int _leftMovement, int _rightMovement);
+
+	//! Get the current direction
+	Orientation getDirection();
+
+	//! Get the current coordinates
+	Position getPosition();
 };
 
 #endif
