@@ -12,6 +12,6 @@ aState::~aState()
 }
 
 
-void aState::Handle_Motor(const Motor& rightMotor, const Motor& leftMotor){
+void aState::Handle_Motor(Motor* rightMotor, Motor* leftMotor){
 	
 }
