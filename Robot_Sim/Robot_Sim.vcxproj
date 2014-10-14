@@ -80,7 +80,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="aState.h" />
+    <ClInclude Include="Event.h" />
     <ClInclude Include="Forward.h" />
+    <ClInclude Include="Listener.h" />
     <ClInclude Include="Integrator.h" />
     <ClInclude Include="IOObj.h" />
     <ClInclude Include="CallException.h" />

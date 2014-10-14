@@ -31,6 +31,9 @@
     <Filter Include="Source Files\Logic">
       <UniqueIdentifier>{bb7ecde1-07f5-404b-b45a-c2d752370624}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Events">
+      <UniqueIdentifier>{500b6ca6-6d3b-46c6-8859-e37a764c9b7e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -80,6 +83,12 @@
     </ClInclude>
     <ClInclude Include="MazeSim.h">
       <Filter>Header Files\Simulation</Filter>
+    </ClInclude>
+    <ClInclude Include="Listener.h">
+      <Filter>Header Files\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Event.h">
+      <Filter>Header Files\Events</Filter>
     </ClInclude>
     <ClInclude Include="CallException.h">
       <Filter>Header Files</Filter>
