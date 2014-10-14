@@ -4,7 +4,6 @@
 
 TurnRight::TurnRight()
 {
-	std::cout << "Tright const called" << endl;
 }
 
 
@@ -12,10 +11,8 @@ TurnRight::~TurnRight()
 {
 }
 
-void TurnRight::Handle_State(bool isOpen, bool isBlocked){
-
-}
-
-void TurnRight::Set_Next_State(aState& state){
-
+void TurnRight::Handle_Motor(const Motor& rightMotor, const Motor& leftMotor){
+	std::cout << "Turning right" << endl;
+	//rightMotor.drive(-1)
+	//leftMotor.drive(1)
 }

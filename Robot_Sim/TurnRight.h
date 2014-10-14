@@ -1,5 +1,6 @@
 #pragma once
 #include "aState.h"
+#include "Motor.h"
 #include <iostream>
 using namespace std;
 class TurnRight :
@@ -9,8 +10,6 @@ public:
 	TurnRight();
 	~TurnRight();
 
-	void Handle_State(bool isOpen, bool isBlocked);
-
-	void Set_Next_State(aState& state);
+	void Handle_Motor(const Motor& rightMotor, const Motor& leftMotor);
 };
 
