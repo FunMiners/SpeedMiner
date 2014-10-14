@@ -60,9 +60,6 @@
     <ClInclude Include="TurnBack.h">
       <Filter>Header Files\Logic</Filter>
     </ClInclude>
-    <ClInclude Include="Parked.h">
-      <Filter>Header Files\Logic</Filter>
-    </ClInclude>
     <ClInclude Include="IOObj.h">
       <Filter>Header Files\IO</Filter>
     </ClInclude>
@@ -96,9 +93,6 @@
       <Filter>Source Files\Logic</Filter>
     </ClCompile>
     <ClCompile Include="Forward.cpp">
-      <Filter>Source Files\Logic</Filter>
-    </ClCompile>
-    <ClCompile Include="Parked.cpp">
       <Filter>Source Files\Logic</Filter>
     </ClCompile>
     <ClCompile Include="TurnBack.cpp">

@@ -1,12 +1,12 @@
 #pragma once
+#include "Motor.h"
 class aState
 {
 
 public:
 	aState();
 	~aState();
-	virtual void Handle_State(bool isOpen, bool isBlocked) = 0;
 
-	virtual void Set_Next_State(aState& state)=0;
+	virtual void Handle_Motor(const Motor& rightMotor, const Motor& leftMotor) = 0; // Give a motor a  value (1, 0 or -1) 1 means forward, 0 means off, -1 means backward
 };
 

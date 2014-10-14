@@ -85,7 +85,6 @@
     <ClInclude Include="IOObj.h" />
     <ClInclude Include="MazeSim.h" />
     <ClInclude Include="Motor.h" />
-    <ClInclude Include="Parked.h" />
     <ClInclude Include="PosSensor.h" />
     <ClInclude Include="StateMachine.h" />
     <ClInclude Include="stdafx.h" />
@@ -103,7 +102,6 @@
     <ClCompile Include="IOObj.cpp" />
     <ClCompile Include="MazeSim.cpp" />
     <ClCompile Include="Motor.cpp" />
-    <ClCompile Include="Parked.cpp" />
     <ClCompile Include="PosSensor.cpp" />
     <ClCompile Include="Robot_Sim.cpp" />
     <ClCompile Include="StateMachine.cpp" />

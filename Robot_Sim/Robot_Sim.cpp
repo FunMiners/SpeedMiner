@@ -10,8 +10,7 @@ int main()
 {
 	char wait;
 	StateMachine machine;
-	machine.Start();
-
+	machine.Set_Next_State();
 	std::cin.get();
 	return 0;
 }
