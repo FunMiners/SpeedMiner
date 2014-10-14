@@ -11,8 +11,9 @@ int main()
 {
 	char wait;
 	StateMachine machine;
-	machine.Start();
-	//MazeSim mazesim;
+	//machine.Start();
+	ifstream infile("MazeFile.txt");
+	//MazeSim mazesim(infile);
 	WallPresence wallpr;
 	std::cin >> wait;
 	std::cin.get();

@@ -4,9 +4,9 @@
 using namespace std;
 
 
-MazeSim::MazeSim()
+MazeSim::MazeSim(istream& mazeFile)
 {
-	data = readFile();
+	data = readFile(mazeFile);
 }
 
 
@@ -14,18 +14,21 @@ MazeSim::~MazeSim()
 {
 }
 
-//void printfunction(const std::vector<std::vector<int> > printData){
-//	//for (auto a : printData){
-//
-//	//}
-//}
-std::vector<std::vector<int> > MazeSim::readFile(){
+void MazeSim::printfunction(mazeType& printData){
+	for (auto &yValues : printData){
+		for (auto &xValues : yValues){
+			cout << xValues << ", ";
+		}
+		cout << endl;
+	}
+}
+mazeType MazeSim::readFile(istream& mazeFile){
 		
-	ifstream infile("MazeFile.txt");
+	
 	string completeText;
-	std::vector<std::vector<int> > tempData;
+	mazeType tempData;
 
-	while (getline(infile, completeText))
+	while (getline(mazeFile, completeText))
 	{		
 		istringstream line(completeText);//every data from the text
 		vector <int> lineData; //data of one line in the file
@@ -37,14 +40,11 @@ std::vector<std::vector<int> > MazeSim::readFile(){
 			if (!getline(line, chara, ',')) break;
 			istringstream(chara) >> numb; //string to int
 			lineData.push_back(numb);
-			//cout << numb << "," ;
 		}
-		//cout << endl;
-
 		tempData.push_back(lineData);
 	}
 	try{
-		if (!infile.eof())
+		if (!mazeFile.eof())
 		{
 			throw CallException("No file could be loaded");
 		}
@@ -52,10 +52,10 @@ std::vector<std::vector<int> > MazeSim::readFile(){
 	catch (std::runtime_error& e){
 		std::cerr << "An error occured: " << e.what() << endl;
 	}
-	//printf(tempData);
+	//printfunction(tempData);
 	return tempData;
 }
 
-std::vector<std::vector<int> > MazeSim::getMaze(){
+mazeType MazeSim::getMaze(){
 	return data;
 }
