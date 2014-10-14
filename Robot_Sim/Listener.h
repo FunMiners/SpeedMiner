@@ -1,9 +1,7 @@
-#ifndef LISTENER_H
-#define LISTENER_H
-
 #pragma once
 
-#include "Event.h"
+#ifndef LISTENER_H
+#define LISTENER_H
 
 //! Abstract Listener Class
 /*!
@@ -11,6 +9,7 @@
  Intentionally called Listener to avoid any confusion because of the name and to give it
  more of a "software feel", if there's such a thing as "software feel"
  */
+class Event;
 class Listener
 {
 public:
