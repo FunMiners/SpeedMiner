@@ -11,6 +11,6 @@ public:
 	Forward();
 	~Forward();
 
-	void Handle_Motor(Motor* rightMotor, Motor* leftMotor);
+	void Handle_Motor(Motor& rightMotor, Motor& leftMotor);
 };
 
