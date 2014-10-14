@@ -7,8 +7,6 @@ using namespace std;
 MazeSim::MazeSim()
 {
 	data = readFile();
-	
-
 }
 
 
@@ -16,10 +14,10 @@ MazeSim::~MazeSim()
 {
 }
 
-//void printf(std::vector<std::vector<int> > printData){
-//	for (auto a : printData){
+//void printfunction(const std::vector<std::vector<int> > printData){
+//	//for (auto a : printData){
 //
-//	}
+//	//}
 //}
 std::vector<std::vector<int> > MazeSim::readFile(){
 		
@@ -39,16 +37,25 @@ std::vector<std::vector<int> > MazeSim::readFile(){
 			if (!getline(line, chara, ',')) break;
 			istringstream(chara) >> numb; //string to int
 			lineData.push_back(numb);
-			cout << numb << "," ;
+			//cout << numb << "," ;
 		}
-		cout << endl;
+		//cout << endl;
 
 		tempData.push_back(lineData);
 	}
-	if (!infile.eof())
-	{
-		cerr << "File not found!\n";
+	try{
+		if (!infile.eof())
+		{
+			throw CallException("No file could be loaded");
+		}
+	}
+	catch (std::runtime_error& e){
+		std::cerr << "An error occured: " << e.what() << endl;
 	}
 	//printf(tempData);
 	return tempData;
+}
+
+std::vector<std::vector<int> > MazeSim::getMaze(){
+	return data;
 }
