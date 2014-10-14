@@ -83,7 +83,7 @@
     <ClInclude Include="Event.h" />
     <ClInclude Include="Forward.h" />
     <ClInclude Include="Listener.h" />
-    <ClInclude Include="Integrator.h" />
+    <ClInclude Include="MovementIntegrator.h" />
     <ClInclude Include="IOObj.h" />
     <ClInclude Include="MazeSim.h" />
     <ClInclude Include="Motor.h" />
@@ -101,7 +101,7 @@
   <ItemGroup>
     <ClCompile Include="aState.cpp" />
     <ClCompile Include="Forward.cpp" />
-    <ClCompile Include="Integrator.cpp" />
+    <ClCompile Include="MovementIntegrator.cpp" />
     <ClCompile Include="IOObj.cpp" />
     <ClCompile Include="MazeSim.cpp" />
     <ClCompile Include="Motor.cpp" />
