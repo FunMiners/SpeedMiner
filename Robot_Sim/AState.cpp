@@ -1,12 +1,19 @@
 #include "stdafx.h"
-#include "AState.h"
+#include "aState.h"
 
 
-AState::AState()
+aState::aState()
 {
 }
 
 
-AState::~AState()
+aState::~aState()
 {
+}
+void aState::Handle_State(bool isOpen, bool isBlocked){
+
+}
+
+void aState::Set_Next_State(aState& state){
+
 }

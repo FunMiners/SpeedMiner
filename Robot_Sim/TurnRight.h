@@ -1,10 +1,16 @@
 #pragma once
-#include "AState.h"
+#include "aState.h"
+#include <iostream>
+using namespace std;
 class TurnRight :
-	public AState
+	public aState
 {
 public:
 	TurnRight();
 	~TurnRight();
+
+	void Handle_State(bool isOpen, bool isBlocked);
+
+	void Set_Next_State(aState& state);
 };
 

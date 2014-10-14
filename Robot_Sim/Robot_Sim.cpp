@@ -2,10 +2,18 @@
 //
 
 #include "stdafx.h"
+#include "StateMachine.h"
+#include "MazeSim.h"
 
 
-int _tmain(int argc, _TCHAR* argv[])
+int main()
 {
+	char wait;
+	StateMachine machine;
+	machine.Start();
+	MazeSim mazesim;
+	std::cin >> wait;
+	std::cin.get();
 	return 0;
 }
 

@@ -13,15 +13,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Logic">
-      <UniqueIdentifier>{92afab25-55e9-41bd-b95d-4c11d88ed7b9}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="IO">
-      <UniqueIdentifier>{96296d27-9d5a-41b5-b7e0-ac17d56b2af2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Simulation">
-      <UniqueIdentifier>{63232eaf-c2c8-4390-8e83-5e5394b473b8}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\IO">
       <UniqueIdentifier>{7891dec1-7a5d-43aa-b9db-4e39f37be305}</UniqueIdentifier>
     </Filter>
@@ -93,6 +84,9 @@
     <ClInclude Include="Integrator.h">
       <Filter>Header Files\Simulation</Filter>
     </ClInclude>
+    <ClInclude Include="MazeSim.h">
+      <Filter>Header Files\Simulation</Filter>
+    </ClInclude>
     <ClInclude Include="Listener.h">
       <Filter>Header Files\Events</Filter>
     </ClInclude>
@@ -108,9 +102,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="StateMachine.cpp">
-      <Filter>Source Files\Logic</Filter>
-    </ClCompile>
-    <ClCompile Include="AState.cpp">
       <Filter>Source Files\Logic</Filter>
     </ClCompile>
     <ClCompile Include="Forward.cpp">
@@ -144,6 +135,12 @@
       <Filter>Source Files\Simulation</Filter>
     </ClCompile>
     <ClCompile Include="WallPresence.cpp">
+      <Filter>Source Files\Simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="aState.cpp">
+      <Filter>Source Files\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="MazeSim.cpp">
       <Filter>Source Files\Simulation</Filter>
     </ClCompile>
   </ItemGroup>
