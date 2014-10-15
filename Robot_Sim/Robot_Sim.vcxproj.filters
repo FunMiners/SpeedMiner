@@ -83,10 +83,10 @@
     <ClInclude Include="CallException.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="MazeSim.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="MovementIntegrator.h">
+      <Filter>Header Files\Simulation</Filter>
+    </ClInclude>
+    <ClInclude Include="MazeSim.h">
       <Filter>Header Files\Simulation</Filter>
     </ClInclude>
   </ItemGroup>
@@ -130,10 +130,10 @@
     <ClCompile Include="WallPresence.cpp">
       <Filter>Source Files\Simulation</Filter>
     </ClCompile>
-    <ClCompile Include="MazeSim.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="MovementIntegrator.cpp">
+      <Filter>Source Files\Simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="MazeSim.cpp">
       <Filter>Source Files\Simulation</Filter>
     </ClCompile>
   </ItemGroup>

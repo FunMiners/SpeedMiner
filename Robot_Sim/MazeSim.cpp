@@ -10,6 +10,8 @@ MazeSim::MazeSim(istream& mazeFile)
 }
 MazeSim::~MazeSim()
 {
+	//!delete the vector with the mazeData
+	data.clear();
 }
 void MazeSim::printfunction(mazeType& printData){ 
 	for (auto &yValues : printData){
@@ -51,7 +53,6 @@ mazeType MazeSim::readFile(istream& mazeFile){
 	//printfunction(tempData);
 	return tempData;
 }
-
 mazeType MazeSim::getMaze(){
 	return data;
 }
