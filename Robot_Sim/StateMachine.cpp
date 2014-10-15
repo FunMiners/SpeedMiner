@@ -3,7 +3,7 @@
 
 
 StateMachine::StateMachine() 
-	:rightIsOpen(rightSensor->getValue()), roadIsBlocked(frontSensor->getValue()), leftIsOpen(leftSensor->getValue())//constructor with	member initialization
+	:rightIsOpen(0), roadIsBlocked(0), leftIsOpen(0)//constructor with	member initialization
 {
 }
 
