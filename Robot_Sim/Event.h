@@ -1,5 +1,4 @@
 #pragma once
-
 #include <list>
 #include "Listener.h"
 
@@ -12,7 +11,7 @@
 	Intentionally called Event to avoid any confusion because of the name, just like with
 	the Listener class.
 */
-class Listener;
+//class Listener;
 class Event
 {
 private:

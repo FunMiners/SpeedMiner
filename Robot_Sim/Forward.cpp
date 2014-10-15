@@ -11,8 +11,7 @@ Forward::~Forward()
 {
 }
 
-void Forward::Handle_Motor(Motor& rightMotor, Motor& leftMotorr){
-	std::cout << "Going forward" << endl;
-	//leftMotor.drive(1);
-	//rightMotor.drive(1);
+void Forward::Handle_Motor(Motor& rightMotor, Motor& leftMotor){
+	rightMotor.setValue(1);
+	leftMotor.setValue(1);
 }

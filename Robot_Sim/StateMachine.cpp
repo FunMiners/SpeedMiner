@@ -2,12 +2,13 @@
 #include "StateMachine.h"
 
 
-StateMachine::StateMachine() :rightIsOpen(false), roadIsBlocked(true), leftIsOpen(false) //member initialization
+StateMachine::StateMachine() 
+	:rightIsOpen(rightSensor->getValue()), roadIsBlocked(frontSensor->getValue()), leftIsOpen(leftSensor->getValue())//constructor with	member initialization
 {
 }
 
 
-StateMachine::~StateMachine()
+StateMachine::~StateMachine()//Desctructor
 {
 }
 
@@ -16,7 +17,6 @@ void StateMachine::update(Event* _event){
 	/*rightIsOpen=rightSensor;	
 	roadIsBlocked=frontSensor;
 	leftIsOpen=leftSensor*/
-	Set_Next_State();
 }
 
 void StateMachine::Set_Next_State(){//Priority is to always go right if possible. States are called in this order
@@ -36,4 +36,5 @@ void StateMachine::Set_Next_State(){//Priority is to always go right if possible
 		TurnRight t_right;
 		t_right.Handle_Motor(rightMotor, leftMotor);
 	}
+	//note: implement a statement to turn motors off?
 }
