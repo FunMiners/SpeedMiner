@@ -115,9 +115,6 @@
     <ClCompile Include="TurnRight.cpp">
       <Filter>Source Files\Logic</Filter>
     </ClCompile>
-    <ClCompile Include="IOObj.cpp">
-      <Filter>Source Files\IO</Filter>
-    </ClCompile>
     <ClCompile Include="Motor.cpp">
       <Filter>Source Files\IO</Filter>
     </ClCompile>

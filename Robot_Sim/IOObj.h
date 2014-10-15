@@ -2,7 +2,7 @@
 class IOObj
 {
 public:
-	IOObj();
-	~IOObj();
+	virtual int getValue() = 0;
+	virtual void setValue(int) = 0;
 };
 

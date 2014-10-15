@@ -102,7 +102,6 @@
     <ClCompile Include="aState.cpp" />
     <ClCompile Include="Forward.cpp" />
     <ClCompile Include="MovementIntegrator.cpp" />
-    <ClCompile Include="IOObj.cpp" />
     <ClCompile Include="MazeSim.cpp" />
     <ClCompile Include="Motor.cpp" />
     <ClCompile Include="PosSensor.cpp" />
